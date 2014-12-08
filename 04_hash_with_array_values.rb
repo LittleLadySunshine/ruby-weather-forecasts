@@ -18,3 +18,7 @@ forecast = {
 }
 
 #----- Put your code below here -----
+forecast.each do |day|
+  puts "#{day[0]}: High of #{day[1].max}, Low of #{day[1].min}"
+
+end

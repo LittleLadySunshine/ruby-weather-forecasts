@@ -9,3 +9,10 @@ forecast = {
 }
 
 #----- your code below -----
+
+# p forecast.keys.each {|high, low| puts "High of #{high}, Low of #{low}"}
+
+
+forecast.each do |day|
+  puts "#{day[0]}: High of #{day[1][0]}, Low of #{day[1][1]}" 
+end
